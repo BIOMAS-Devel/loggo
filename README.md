@@ -4,7 +4,7 @@
 
 - runtime log routing through named targets and rules
 - log levels from `trace` to `fatal`
-- source generation with `@AutoLogger` to attach a logger to a class
+- source generation with `@Loggo()` to attach a logger to a class
 
 ## Features
 
@@ -46,7 +46,7 @@ void configureLogging() {
 }
 ```
 
-## Using `@AutoLogger`
+## Using `@Loggo()`
 
 Annotate the class, add a `part` directive, then run code generation.
 
@@ -55,7 +55,7 @@ import 'package:loggo/loggo.dart';
 
 part 'user_service.loggo.dart';
 
-@AutoLogger()
+@Loggo()
 class UserService {
   void loadUser() {
     _logger.info('Loading user');
@@ -94,5 +94,5 @@ class MemoryTarget extends LogTarget {
 
 ## Notes before publishing
 
-- If you want a high pub score, add a public repository URL to `pubspec.yaml`.
-- Add a public `repository:` field in `pubspec.yaml` before publishing for a better pub score.
+- Repository and issue tracker are available on GitHub:
+  `https://github.com/BIOMAS-Devel/loggo`

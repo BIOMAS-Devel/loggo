@@ -2,6 +2,13 @@ name: loggo
 description: Annotation-driven logging package for Dart and Flutter with rules, targets, and source generation support.
 version: 0.0.1
 publish_to: https://pub.dev
+homepage: https://github.com/BIOMAS-Devel/loggo
+repository: https://github.com/BIOMAS-Devel/loggo
+issue_tracker: https://github.com/BIOMAS-Devel/loggo/issues
+topics:
+  - logging
+  - codegen
+  - source-gen
 
 environment:
   sdk: ^3.9.0
